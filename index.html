@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"DuoFolio"</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets\style.css">
     <script src="assets\script.js" defer></script>
 </head>
 <body>
@@ -14,42 +14,50 @@
             <ul>
                 <li><a href="#hero" >Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#developers">Our Team</a></li>
+                <li><a href="#our-team">Our Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <hero id="hero">
+    <section id="hero">
+    <video autoplay muted loop playsinline id="hero-video">
+        <source src="assets\image\5971109-uhd_4096_2160_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
         <h1>Two Developers. One Vision.</h1>
-        <p> Doesn't matter which one you choose, both share the podium of software development.</p>
-        <video width="600" height="400" autoplay loop muted>
-            <source src="assets\image\5971109-uhd_4096_2160_25fps.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-
-    </hero>
-    <about id="about">
+        <p>Doesn't matter which one you choose, both share the podium of software development.</p>
+    </div>
+</section>
+  
+    <section id="about">
         <h2>About Us</h2>
         <p>We are two passionate developers with a shared vision for creating innovative software solutions. 
             With an intermediate level of experience in the industry, we have honed our skills in various programming languages and frameworks. Our goal is to deliver high quality, user friendly applications that make a difference in people's lives.
-        </p>
-    </about>
-    <developers id="developers">
-        <h2>Our Team</h2>
-        <div class="developer"> <a href="cv-rafik.html">
-            <img width="400"
-            <source src="assets\image\rafik_main.jpeg" alt="Rafik">
-            <h3> <a href="cv-rafik.html">Rafik</a></h3>
-            <p>Rafik is a growingfull stack developer with expertise in JavaScript, Python. He has a knack for creating intuitive user interfaces and seamless user experiences.</p>
+        <p>Doesn't matter which one you choose, both share the podium of software development.</p>
+    </div>
+    </section>
+
+   <section id="our-team">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+        <div class="team-card">
+            <img src="assets/image/rafik_main.jpeg" alt="Rafik">
+            <div class="team-info">
+                <h3>Rafik</h3>
+                <p>Full stack developer with expertise in JavaScript and Python.</p>
+                <a href="cv-rafik.html">View CV →</a>
+            </div>
         </div>
-        <div class="developer">
-            <img width="400"
-            <source src="assets\image\IMG_0426 2.JPG" alt="Isabelle">
-            <h3>Isabelle</h3>
-            <p>Isabelle is a backend developer specializing in Java, C#, and Go. She excels at building robust and scalable server-side applications that power our projects.</p>
+        <div class="team-card">
+            <img src="assets/image/IMG_0426 2.JPG" alt="Isabelle">
+            <div class="team-info">
+                <h3>Isabelle</h3>
+                <p>Backend developer specialising in Java, C#, and Go.</p>
+                <a href="">View CV →</a>
+            </div>
         </div>
-    </developers>
+    </div>
+</section>
 </body>
 <footer>
     <p>&copy; 2024 DuoFolio. All rights reserved.</p>
@@ -57,7 +65,7 @@
             <ul>
                 <li><a href="#hero" >Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#developers">Our Team</a></li>
+                <li><a href="#our-team">Our Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
