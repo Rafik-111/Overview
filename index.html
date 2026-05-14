@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"DuoFolio"</title>
     <link rel="stylesheet" href="style.css">
-    <script src="assets/script.js"></script>
+    <script src="assets\script.js" defer></script>
 </head>
 <body>
     <header>
+        <button id="themeButton" aria-label="Toggle Dark Mode"> 🌘</button>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
+                <li><a href="#hero" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#developers">Our Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <hero>
+    <hero id="hero">
         <h1>Two Developers. One Vision.</h1>
-        <p> Doesn't matter which one you choose, both share the podiom of software development.</p>
+        <p> Doesn't matter which one you choose, both share the podium of software development.</p>
         <video width="600" height="400" autoplay loop muted>
             <source src="assets\image\5971109-uhd_4096_2160_25fps.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -28,13 +29,13 @@
 
 
     </hero>
-    <about>
+    <about id="about">
         <h2>About Us</h2>
         <p>We are two passionate developers with a shared vision for creating innovative software solutions. 
-            With a combined experience of over a decade in the industry, we have honed our skills in various programming languages and frameworks. Our goal is to deliver high quality, user friendly applications that make a difference in people's lives.
+            With an intermediate level of experience in the industry, we have honed our skills in various programming languages and frameworks. Our goal is to deliver high quality, user friendly applications that make a difference in people's lives.
         </p>
     </about>
-    <developers>
+    <developers id="developers">
         <h2>Our Team</h2>
         <div class="developer">
             <img width="400"
@@ -52,5 +53,14 @@
 </body>
 <footer>
     <p>&copy; 2024 DuoFolio. All rights reserved.</p>
+    <nav>
+            <ul>
+                <li><a href="#hero" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#developers">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <p><span id="current-date"></span></p>
 </footer>
 </html>
