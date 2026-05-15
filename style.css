@@ -1,6 +1,6 @@
 .myDiv{
-            border: 3px solid rgb(9, 70, 111);
-            margin: 10px;
+            border: 2px solid rgb(9, 70, 111);
+            margin: 20px;
             padding: 15px;
             height: 20px;
             background-color: rgb(202, 234, 245);
@@ -11,8 +11,8 @@
 
 .carousel {
     margin: 0 auto;
-    padding: 20px 0;
-    max-width:700%;
+    padding: 5px 0;
+    max-width: 100%;
     overflow: hidden;
     display: flex;
 }
@@ -22,14 +22,14 @@
 .group {
     display: flex;
     flex: 0 0 100%;
-    padding-right:20px;
+    padding-right:10px;
     will-change: transform;
-    animation: scrolling 7s linear infinite;
+    animation: scrolling 6s linear infinite;
 }
 .card {
     width: 100%;
-    padding: 20px;
-    font-size: 30px;
+    padding: 25px;
+    font-size: 25px;
     border-radius: 24px;
     justify-content: center;
     align-items: center;
@@ -41,5 +41,102 @@
     }
     100%{
          transform: translateX(-100%);
+    }
+}
+
+.container {
+    display: flex;
+    background-color: #e2e2c9;
+}
+.container div{
+    background-color: white;
+    margin: 10px;
+    padding: 50px;
+    font-size: 20px;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding:0 50px;
+    height: 80px;
+    align-items: center;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* SECTION1*/
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+
+}
+
+.intro-section .photo{
+    flex: 2;  
+}
+
+.intro-section .photo img{
+    width: 150px;
+    border-radius: 10%;
+}
+
+@media (max-width: 600px){
+    /*NAVBAR */
+    nav{
+        padding: 0 20px;
+
+    }
+
+    nav .right a{
+        font-size:22px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none
     }
 }
